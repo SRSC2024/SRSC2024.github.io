@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>New Page</title>
+</head>
+<body>
+    <h1>dermatology</h1>
+
+    <div id="quiz-container">
+        <h2> 10 MCQs</h2>
+        <p>Question 1: What is the capital of France?</p>
+        <label>
+            <input type="radio" name="q1" value="correct"> Paris
+        </label>
+        <label>
+            <input type="radio" name="q1" value="incorrect"> London
+        </label>
+        <label>
+            <input type="radio" name="q1" value="incorrect"> Berlin
+        </label>
+        <label>
+            <input type="radio" name="q1" value="incorrect"> Madrid
+        </label>
+        <button onclick="checkAnswer(1)">Submit Answer</button>
+        <div id="explanation1"></div>
+
+        <!-- Add more questions here -->
+    </div>
+
+    <script>
+        function checkAnswer(questionNumber) {
+            const radioButtons = document.getElementsByName(`q${questionNumber}`);
+            const explanation = document.getElementById(`explanation${questionNumber}`);
+
+            let correctAnswer = false;
+
+            for (let i = 0; i < radioButtons.length; i++) {
+                radioButtons[i].disabled = true; // Disable radio buttons after submission
+                if (radioButtons[i].checked && radioButtons[i].value === "correct") {
+                    correctAnswer = true;
+                    radioButtons[i].nextSibling.innerHTML += ' <span style="color: green;">✓ Correct</span>';
+                } else if (radioButtons[i].checked) {
+                    radioButtons[i].nextSibling.innerHTML += ' <span style="color: red;">✗ Incorrect</span>';
+                }
+            }
+
+            if (correctAnswer) {
+                explanation.innerHTML = 'Paris is the capital of France. That\'s correct!';
+            } else {
+                explanation.innerHTML = 'Incorrect. The correct answer is Paris.';
+            }
+        }
+    </script>
+</body>
+</html>

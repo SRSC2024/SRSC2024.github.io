@@ -1,0 +1,58 @@
+/* Apply styles to the body element */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 50px;
+}
+
+/* Style for the main heading */
+h1 {
+    color: #333;
+}
+
+/* Style for the form container */
+#login-form {
+    max-width: 300px;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* Style for labels */
+label {
+    display: block;
+    text-align: left;
+}
+
+/* Style for input fields */
+input[type="text"],
+input[type="password"] {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Style for the login button */
+button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Style for error message */
+#message {
+    color: #ff0000;
+    font-weight: bold;
+}

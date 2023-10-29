@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>New Page</title>
+</head>
+<body>
+    <h1>dermatology</h1>
+
+    <div id="quiz-container">
+        <h2> 10 MCQs</h2>
+        <div id="question"></div>
+        <form id="quiz-form">
+            <!-- Radio buttons for answer choices -->
+            <label>
+                <input type="radio" name="answer" id="option1">
+                <span id="label1"></span>
+            </label>
+            <label>
+                <input type="radio" name="answer" id="option2">
+                <span id="label2"></span>
+            </label>
+            <label>
+                <input type="radio" name="answer" id="option3">
+                <span id="label3"></span>
+            </label>
+            <label>
+                <input type="radio" name="answer" id="option4">
+                <span id="label4"></span>
+            </label>
+            <button type="button" id="submit-button">Submit Answer</button>
+            <button type="button" id="next-button">Next</button>
+        </form>
+        <div id="explanation"></div>
+    </div>
+
+    <script>
+        const questionBank = [
+            {
+                question: "What is the capital of France?",
+                options: ["Paris", "London", "Berlin", "Madrid"],
+                correctAnswer: "Paris",
+            },
+            {
+                question: "What is the largest planet in our solar system?",
+                options: ["Earth", "Mars", "Jupiter", "Saturn"],
+                correctAnswer: "Jupiter",
+            },
+            // Add more questions to the question bank
+        ];
+
+        let currentQuestionIndex = 0;
+        let currentQuestion;
+
+        const questionElement = document.getElementById("question");
+        const labels = [document.getElementById("label1"), document.getElementById("label2"), document.getElementById("label3"), document.getElementById("label4")];
+        const submitButton = document.getElementById("submit-button");
+        const nextButton = document.getElementById("next-button");
+        const explanation = document.getElementById("explanation");
+
+        function setRandomQuestion() {
+            if (currentQuestionIndex < questionBank.length) {
+                const randomIndex = Math.floor(Math.random() * questionBank.length);
+                currentQuestion = questionBank[randomIndex];
+                displayQuestion(currentQuestion);
+            } else {
+                questionElement.textContent = "Quiz Finished!";
+                labels.forEach((label, index) => {
+                    label.textContent = "";
+                });
+                submitButton.disabled = true;
+                nextButton.disabled = true;
+            }
+        }
+
+        function displayQuestion(question) {
+            questionElement.textContent = question.question;
+            question.options.forEach((option, index) => {
+                labels[index].textContent = option;
+            });
+        }
+
+        function checkAnswer() {
+            const selectedOption = document.querySelector('input[name="answer"]:checked');
+
+            if (selectedOption) {
+                const userAnswer = selectedOption.labels[0].textContent;
+                explanation.innerHTML = userAnswer === currentQuestion.correctAnswer ? '✓ Correct' : `✗ Incorrect. The correct answer is ${currentQuestion.correctAnswer}`;
+                submitButton.disabled = true; // Disable the submit button
+                nextButton.disabled = false; // Enable the next button
+            } else {
+                explanation.innerHTML = 'Please select an answer.';
+            }
+        }
+
+        submitButton.addEventListener("click", checkAnswer);
+        nextButton.addEventListener("click", () => {
+            explanation.innerHTML = ''; // Clear the explanation
+            currentQuestionIndex++;
+            submitButton.disabled = false; // Enable the submit button
+            nextButton.disabled = true; // Disable the next button
+            setRandomQuestion();
+        });
+
+        setRandomQuestion(); // Initialize with the first question
+    </script>
+</body>
+</html>

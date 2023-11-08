@@ -1,890 +1,725 @@
-// Define your questions
 const allQuestions = [
     {
         question: "1",
         answers: [
-            { text: "yes", correct: false },
-            { text: "no", correct: true },
-            { text: "mabye", correct: false },
-            { text: "absulutly", correct: false }
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "no", correct: true, explanation:" true" },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " }
         ]
     },
     {
         question: "2",
         answers: [
-            { text: "London", correct: false },
-            { text: "Paris", correct: true },
-            { text: "Berlin", correct: false },
-            { text: "Madrid", correct: false }
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: true, explanation: "right " },
+            { text: "yes", correct: false, explanation: "haaaa " }
         ]
     },
     {
         question: "3",
         answers: [
-            { text: "London", correct: false },
-            { text: "Paris", correct: true },
-            { text: "Berlin", correct: false },
-            { text: "Madrid", correct: false }
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: true, explanation: "right " }
         ]
     },
     {
         question: "4",
         answers: [
-            { text: "London", correct: false },
-            { text: "Paris", correct: true },
-            { text: "Berlin", correct: false },
-            { text: "Madrid", correct: false }
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: true, explanation: "right " }
         ]
     },
     {
         question: "5",
         answers: [
-            { text: "London", correct: false },
-            { text: "Paris", correct: true },
-            { text: "Berlin", correct: false },
-            { text: "Madrid", correct: false }
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: true, explanation: "right " }
         ]
     },
     {
         question: "6?",
         answers: [
-            { text: "London", correct: false },
-            { text: "Paris", correct: true },
-            { text: "Berlin", correct: false },
-            { text: "Madrid", correct: false }
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: true, explanation: "right " }
         ]
     },
     {
         question: "7",
         answers: [
-            { text: "London", correct: false },
-            { text: "Paris", correct: true },
-            { text: "Berlin", correct: false },
-            { text: "Madrid", correct: false }
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: true, explanation: "right " }
         ]
     },
     {
         question: "8",
         answers: [
-            { text: "yes", correct: false },
-            { text: "no", correct: true },
-            { text: "mabye", correct: false },
-            { text: "absulutly", correct: false }
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: true, explanation: "right " }
         ]
     },
     {
         question: "9",
         answers: [
-            { text: "London", correct: false },
-            { text: "Paris", correct: true },
-            { text: "Berlin", correct: false },
-            { text: "Madrid", correct: false }
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: true, explanation: "right " }
         ]
     },
     {
         question: "10",
         answers: [
-            { text: "London", correct: false },
-            { text: "Paris", correct: true },
-            { text: "Berlin", correct: false },
-            { text: "Madrid", correct: false }
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: true, explanation: "right " }
         ]
     },
     {
         question: "11",
         answers: [
-            { text: "London", correct: false },
-            { text: "Paris", correct: true },
-            { text: "Berlin", correct: false },
-            { text: "Madrid", correct: false }
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: true, explanation: "right " }
         ]
     },
     {
         question: "12",
         answers: [
-            { text: "London", correct: false },
-            { text: "Paris", correct: true },
-            { text: "Berlin", correct: false },
-            { text: "Madrid", correct: false }
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: true, explanation: "right " }
         ]
     },
     {
         question: "13",
         answers: [
-            { text: "London", correct: false },
-            { text: "Paris", correct: true },
-            { text: "Berlin", correct: false },
-            { text: "Madrid", correct: false }
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: true, explanation: "right " }
         ]
     },
     {
         question: "14",
         answers: [
-            { text: "London", correct: false },
-            { text: "Paris", correct: true },
-            { text: "Berlin", correct: false },
-            { text: "Madrid", correct: false }
-        ]
-    },
-    {
-        question: "1",
-        answers: [
-            { text: "yes", correct: false },
-            { text: "no", correct: true },
-            { text: "mabye", correct: false },
-            { text: "absulutly", correct: false }
-        ]
-    },
-    {
-        question: "2",
-        answers: [
-            { text: "London", correct: false },
-            { text: "Paris", correct: true },
-            { text: "Berlin", correct: false },
-            { text: "Madrid", correct: false }
-        ]
-    },
-    {
-        question: "3",
-        answers: [
-            { text: "London", correct: false },
-            { text: "Paris", correct: true },
-            { text: "Berlin", correct: false },
-            { text: "Madrid", correct: false }
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: true, explanation: "right " },
+            { text: "yes", correct: false, explanation: "haaaa " }
         ]
     },
     {
         question: "4",
         answers: [
-            { text: "London", correct: false },
-            { text: "Paris", correct: true },
-            { text: "Berlin", correct: false },
-            { text: "Madrid", correct: false }
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: true, explanation: "right " }
         ]
     },
     {
         question: "5",
         answers: [
-            { text: "London", correct: false },
-            { text: "Paris", correct: true },
-            { text: "Berlin", correct: false },
-            { text: "Madrid", correct: false }
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: true, explanation: "right " }
         ]
     },
     {
         question: "6?",
         answers: [
-            { text: "London", correct: false },
-            { text: "Paris", correct: true },
-            { text: "Berlin", correct: false },
-            { text: "Madrid", correct: false }
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: true, explanation: "right " }
         ]
     },
     {
         question: "7",
         answers: [
-            { text: "London", correct: false },
-            { text: "Paris", correct: true },
-            { text: "Berlin", correct: false },
-            { text: "Madrid", correct: false }
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: true, explanation: "right " }
         ]
     },
     {
         question: "8",
         answers: [
-            { text: "yes", correct: false },
-            { text: "no", correct: true },
-            { text: "mabye", correct: false },
-            { text: "absulutly", correct: false }
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: true, explanation: "right " }
         ]
     },
     {
         question: "9",
         answers: [
-            { text: "London", correct: false },
-            { text: "Paris", correct: true },
-            { text: "Berlin", correct: false },
-            { text: "Madrid", correct: false }
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: true, explanation: "right " }
         ]
     },
     {
         question: "10",
         answers: [
-            { text: "London", correct: false },
-            { text: "Paris", correct: true },
-            { text: "Berlin", correct: false },
-            { text: "Madrid", correct: false }
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: true, explanation: "right " }
         ]
     },
     {
         question: "11",
         answers: [
-            { text: "London", correct: false },
-            { text: "Paris", correct: true },
-            { text: "Berlin", correct: false },
-            { text: "Madrid", correct: false }
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: true, explanation: "right " }
         ]
     },
     {
         question: "12",
         answers: [
-            { text: "London", correct: false },
-            { text: "Paris", correct: true },
-            { text: "Berlin", correct: false },
-            { text: "Madrid", correct: false }
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: true, explanation: "right " }
         ]
     },
     {
         question: "13",
         answers: [
-            { text: "London", correct: false },
-            { text: "Paris", correct: true },
-            { text: "Berlin", correct: false },
-            { text: "Madrid", correct: false }
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: true, explanation: "right " }
         ]
     },
     {
         question: "14",
         answers: [
-            { text: "London", correct: false },
-            { text: "Paris", correct: true },
-            { text: "Berlin", correct: false },
-            { text: "Madrid", correct: false }
-        ]
-    },
-    {
-        question: "1",
-        answers: [
-            { text: "yes", correct: false },
-            { text: "no", correct: true },
-            { text: "mabye", correct: false },
-            { text: "absulutly", correct: false }
-        ]
-    },
-    {
-        question: "2",
-        answers: [
-            { text: "London", correct: false },
-            { text: "Paris", correct: true },
-            { text: "Berlin", correct: false },
-            { text: "Madrid", correct: false }
-        ]
-    },
-    {
-        question: "3",
-        answers: [
-            { text: "London", correct: false },
-            { text: "Paris", correct: true },
-            { text: "Berlin", correct: false },
-            { text: "Madrid", correct: false }
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: true, explanation: "right " },
+            { text: "yes", correct: false, explanation: "haaaa " }
         ]
     },
     {
         question: "4",
         answers: [
-            { text: "London", correct: false },
-            { text: "Paris", correct: true },
-            { text: "Berlin", correct: false },
-            { text: "Madrid", correct: false }
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: true, explanation: "right " }
         ]
     },
     {
         question: "5",
         answers: [
-            { text: "London", correct: false },
-            { text: "Paris", correct: true },
-            { text: "Berlin", correct: false },
-            { text: "Madrid", correct: false }
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: true, explanation: "right " }
         ]
     },
     {
         question: "6?",
         answers: [
-            { text: "London", correct: false },
-            { text: "Paris", correct: true },
-            { text: "Berlin", correct: false },
-            { text: "Madrid", correct: false }
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: true, explanation: "right " }
         ]
     },
     {
         question: "7",
         answers: [
-            { text: "London", correct: false },
-            { text: "Paris", correct: true },
-            { text: "Berlin", correct: false },
-            { text: "Madrid", correct: false }
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: true, explanation: "right " }
         ]
     },
     {
         question: "8",
         answers: [
-            { text: "yes", correct: false },
-            { text: "no", correct: true },
-            { text: "mabye", correct: false },
-            { text: "absulutly", correct: false }
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: true, explanation: "right " }
         ]
     },
     {
         question: "9",
         answers: [
-            { text: "London", correct: false },
-            { text: "Paris", correct: true },
-            { text: "Berlin", correct: false },
-            { text: "Madrid", correct: false }
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: true, explanation: "right " }
         ]
     },
     {
         question: "10",
         answers: [
-            { text: "London", correct: false },
-            { text: "Paris", correct: true },
-            { text: "Berlin", correct: false },
-            { text: "Madrid", correct: false }
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: true, explanation: "right " }
         ]
     },
     {
         question: "11",
         answers: [
-            { text: "London", correct: false },
-            { text: "Paris", correct: true },
-            { text: "Berlin", correct: false },
-            { text: "Madrid", correct: false }
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: true, explanation: "right " }
         ]
     },
     {
         question: "12",
         answers: [
-            { text: "London", correct: false },
-            { text: "Paris", correct: true },
-            { text: "Berlin", correct: false },
-            { text: "Madrid", correct: false }
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: true, explanation: "right " }
         ]
     },
     {
         question: "13",
         answers: [
-            { text: "London", correct: false },
-            { text: "Paris", correct: true },
-            { text: "Berlin", correct: false },
-            { text: "Madrid", correct: false }
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: true, explanation: "right " }
         ]
     },
     {
         question: "14",
         answers: [
-            { text: "London", correct: false },
-            { text: "Paris", correct: true },
-            { text: "Berlin", correct: false },
-            { text: "Madrid", correct: false }
-        ]
-    },
-    {
-        question: "1",
-        answers: [
-            { text: "yes", correct: false },
-            { text: "no", correct: true },
-            { text: "mabye", correct: false },
-            { text: "absulutly", correct: false }
-        ]
-    },
-    {
-        question: "2",
-        answers: [
-            { text: "London", correct: false },
-            { text: "Paris", correct: true },
-            { text: "Berlin", correct: false },
-            { text: "Madrid", correct: false }
-        ]
-    },
-    {
-        question: "3",
-        answers: [
-            { text: "London", correct: false },
-            { text: "Paris", correct: true },
-            { text: "Berlin", correct: false },
-            { text: "Madrid", correct: false }
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: true, explanation: "right " },
+            { text: "yes", correct: false, explanation: "haaaa " }
         ]
     },
     {
         question: "4",
         answers: [
-            { text: "London", correct: false },
-            { text: "Paris", correct: true },
-            { text: "Berlin", correct: false },
-            { text: "Madrid", correct: false }
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: true, explanation: "right " }
         ]
     },
     {
         question: "5",
         answers: [
-            { text: "London", correct: false },
-            { text: "Paris", correct: true },
-            { text: "Berlin", correct: false },
-            { text: "Madrid", correct: false }
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: true, explanation: "right " }
         ]
     },
     {
         question: "6?",
         answers: [
-            { text: "London", correct: false },
-            { text: "Paris", correct: true },
-            { text: "Berlin", correct: false },
-            { text: "Madrid", correct: false }
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: true, explanation: "right " }
         ]
     },
     {
         question: "7",
         answers: [
-            { text: "London", correct: false },
-            { text: "Paris", correct: true },
-            { text: "Berlin", correct: false },
-            { text: "Madrid", correct: false }
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: true, explanation: "right " }
         ]
     },
     {
         question: "8",
         answers: [
-            { text: "yes", correct: false },
-            { text: "no", correct: true },
-            { text: "mabye", correct: false },
-            { text: "absulutly", correct: false }
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: true, explanation: "right " }
         ]
     },
     {
         question: "9",
         answers: [
-            { text: "London", correct: false },
-            { text: "Paris", correct: true },
-            { text: "Berlin", correct: false },
-            { text: "Madrid", correct: false }
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: true, explanation: "right " }
         ]
     },
     {
         question: "10",
         answers: [
-            { text: "London", correct: false },
-            { text: "Paris", correct: true },
-            { text: "Berlin", correct: false },
-            { text: "Madrid", correct: false }
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: true, explanation: "right " }
         ]
     },
     {
         question: "11",
         answers: [
-            { text: "London", correct: false },
-            { text: "Paris", correct: true },
-            { text: "Berlin", correct: false },
-            { text: "Madrid", correct: false }
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: true, explanation: "right " }
         ]
     },
     {
         question: "12",
         answers: [
-            { text: "London", correct: false },
-            { text: "Paris", correct: true },
-            { text: "Berlin", correct: false },
-            { text: "Madrid", correct: false }
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: true, explanation: "right " }
         ]
     },
     {
         question: "13",
         answers: [
-            { text: "London", correct: false },
-            { text: "Paris", correct: true },
-            { text: "Berlin", correct: false },
-            { text: "Madrid", correct: false }
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: true, explanation: "right " }
         ]
     },
     {
         question: "14",
         answers: [
-            { text: "London", correct: false },
-            { text: "Paris", correct: true },
-            { text: "Berlin", correct: false },
-            { text: "Madrid", correct: false }
-        ]
-    },
-    {
-        question: "1",
-        answers: [
-            { text: "yes", correct: false },
-            { text: "no", correct: true },
-            { text: "mabye", correct: false },
-            { text: "absulutly", correct: false }
-        ]
-    },
-    {
-        question: "2",
-        answers: [
-            { text: "London", correct: false },
-            { text: "Paris", correct: true },
-            { text: "Berlin", correct: false },
-            { text: "Madrid", correct: false }
-        ]
-    },
-    {
-        question: "3",
-        answers: [
-            { text: "London", correct: false },
-            { text: "Paris", correct: true },
-            { text: "Berlin", correct: false },
-            { text: "Madrid", correct: false }
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: true, explanation: "right " },
+            { text: "yes", correct: false, explanation: "haaaa " }
         ]
     },
     {
         question: "4",
         answers: [
-            { text: "London", correct: false },
-            { text: "Paris", correct: true },
-            { text: "Berlin", correct: false },
-            { text: "Madrid", correct: false }
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: true, explanation: "right " }
         ]
     },
     {
         question: "5",
         answers: [
-            { text: "London", correct: false },
-            { text: "Paris", correct: true },
-            { text: "Berlin", correct: false },
-            { text: "Madrid", correct: false }
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: true, explanation: "right " }
         ]
     },
     {
         question: "6?",
         answers: [
-            { text: "London", correct: false },
-            { text: "Paris", correct: true },
-            { text: "Berlin", correct: false },
-            { text: "Madrid", correct: false }
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: true, explanation: "right " }
         ]
     },
     {
         question: "7",
         answers: [
-            { text: "London", correct: false },
-            { text: "Paris", correct: true },
-            { text: "Berlin", correct: false },
-            { text: "Madrid", correct: false }
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: true, explanation: "right " }
         ]
     },
     {
         question: "8",
         answers: [
-            { text: "yes", correct: false },
-            { text: "no", correct: true },
-            { text: "mabye", correct: false },
-            { text: "absulutly", correct: false }
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: true, explanation: "right " }
         ]
     },
     {
         question: "9",
         answers: [
-            { text: "London", correct: false },
-            { text: "Paris", correct: true },
-            { text: "Berlin", correct: false },
-            { text: "Madrid", correct: false }
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: true, explanation: "right " }
         ]
     },
     {
         question: "10",
         answers: [
-            { text: "London", correct: false },
-            { text: "Paris", correct: true },
-            { text: "Berlin", correct: false },
-            { text: "Madrid", correct: false }
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: true, explanation: "right " }
         ]
     },
     {
         question: "11",
         answers: [
-            { text: "London", correct: false },
-            { text: "Paris", correct: true },
-            { text: "Berlin", correct: false },
-            { text: "Madrid", correct: false }
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: true, explanation: "right " }
         ]
     },
     {
         question: "12",
         answers: [
-            { text: "London", correct: false },
-            { text: "Paris", correct: true },
-            { text: "Berlin", correct: false },
-            { text: "Madrid", correct: false }
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: true, explanation: "right " }
         ]
     },
     {
         question: "13",
         answers: [
-            { text: "London", correct: false },
-            { text: "Paris", correct: true },
-            { text: "Berlin", correct: false },
-            { text: "Madrid", correct: false }
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: true, explanation: "right " }
         ]
     },
     {
         question: "14",
         answers: [
-            { text: "London", correct: false },
-            { text: "Paris", correct: true },
-            { text: "Berlin", correct: false },
-            { text: "Madrid", correct: false }
-        ]
-    },
-    {
-        question: "1",
-        answers: [
-            { text: "yes", correct: false },
-            { text: "no", correct: true },
-            { text: "mabye", correct: false },
-            { text: "absulutly", correct: false }
-        ]
-    },
-    {
-        question: "2",
-        answers: [
-            { text: "London", correct: false },
-            { text: "Paris", correct: true },
-            { text: "Berlin", correct: false },
-            { text: "Madrid", correct: false }
-        ]
-    },
-    {
-        question: "3",
-        answers: [
-            { text: "London", correct: false },
-            { text: "Paris", correct: true },
-            { text: "Berlin", correct: false },
-            { text: "Madrid", correct: false }
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: true, explanation: "right " },
+            { text: "yes", correct: false, explanation: "haaaa " }
         ]
     },
     {
         question: "4",
         answers: [
-            { text: "London", correct: false },
-            { text: "Paris", correct: true },
-            { text: "Berlin", correct: false },
-            { text: "Madrid", correct: false }
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: true, explanation: "right " }
         ]
     },
     {
         question: "5",
         answers: [
-            { text: "London", correct: false },
-            { text: "Paris", correct: true },
-            { text: "Berlin", correct: false },
-            { text: "Madrid", correct: false }
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: true, explanation: "right " }
         ]
     },
     {
         question: "6?",
         answers: [
-            { text: "London", correct: false },
-            { text: "Paris", correct: true },
-            { text: "Berlin", correct: false },
-            { text: "Madrid", correct: false }
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: true, explanation: "right " }
         ]
     },
     {
         question: "7",
         answers: [
-            { text: "London", correct: false },
-            { text: "Paris", correct: true },
-            { text: "Berlin", correct: false },
-            { text: "Madrid", correct: false }
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: true, explanation: "right " }
         ]
     },
     {
         question: "8",
         answers: [
-            { text: "yes", correct: false },
-            { text: "no", correct: true },
-            { text: "mabye", correct: false },
-            { text: "absulutly", correct: false }
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: true, explanation: "right " }
         ]
     },
     {
         question: "9",
         answers: [
-            { text: "London", correct: false },
-            { text: "Paris", correct: true },
-            { text: "Berlin", correct: false },
-            { text: "Madrid", correct: false }
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: true, explanation: "right " }
         ]
     },
     {
         question: "10",
         answers: [
-            { text: "London", correct: false },
-            { text: "Paris", correct: true },
-            { text: "Berlin", correct: false },
-            { text: "Madrid", correct: false }
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: true, explanation: "right " }
         ]
     },
     {
         question: "11",
         answers: [
-            { text: "London", correct: false },
-            { text: "Paris", correct: true },
-            { text: "Berlin", correct: false },
-            { text: "Madrid", correct: false }
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: true, explanation: "right " }
         ]
     },
     {
         question: "12",
         answers: [
-            { text: "London", correct: false },
-            { text: "Paris", correct: true },
-            { text: "Berlin", correct: false },
-            { text: "Madrid", correct: false }
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: true, explanation: "right " }
         ]
     },
     {
         question: "13",
         answers: [
-            { text: "London", correct: false },
-            { text: "Paris", correct: true },
-            { text: "Berlin", correct: false },
-            { text: "Madrid", correct: false }
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: true, explanation: "right " }
         ]
     },
     {
         question: "14",
         answers: [
-            { text: "London", correct: false },
-            { text: "Paris", correct: true },
-            { text: "Berlin", correct: false },
-            { text: "Madrid", correct: false }
-        ]
-    },
-    {
-        question: "1",
-        answers: [
-            { text: "yes", correct: false },
-            { text: "no", correct: true },
-            { text: "mabye", correct: false },
-            { text: "absulutly", correct: false }
-        ]
-    },
-    {
-        question: "2",
-        answers: [
-            { text: "London", correct: false },
-            { text: "Paris", correct: true },
-            { text: "Berlin", correct: false },
-            { text: "Madrid", correct: false }
-        ]
-    },
-    {
-        question: "3",
-        answers: [
-            { text: "London", correct: false },
-            { text: "Paris", correct: true },
-            { text: "Berlin", correct: false },
-            { text: "Madrid", correct: false }
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: true, explanation: "right " },
+            { text: "yes", correct: false, explanation: "haaaa " }
         ]
     },
     {
         question: "4",
         answers: [
-            { text: "London", correct: false },
-            { text: "Paris", correct: true },
-            { text: "Berlin", correct: false },
-            { text: "Madrid", correct: false }
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: true, explanation: "right " }
         ]
     },
     {
         question: "5",
         answers: [
-            { text: "London", correct: false },
-            { text: "Paris", correct: true },
-            { text: "Berlin", correct: false },
-            { text: "Madrid", correct: false }
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: true, explanation: "right " }
         ]
     },
     {
         question: "6?",
         answers: [
-            { text: "London", correct: false },
-            { text: "Paris", correct: true },
-            { text: "Berlin", correct: false },
-            { text: "Madrid", correct: false }
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: true, explanation: "right " }
         ]
     },
     {
         question: "7",
         answers: [
-            { text: "London", correct: false },
-            { text: "Paris", correct: true },
-            { text: "Berlin", correct: false },
-            { text: "Madrid", correct: false }
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: true, explanation: "right " }
         ]
     },
     {
         question: "8",
         answers: [
-            { text: "yes", correct: false },
-            { text: "no", correct: true },
-            { text: "mabye", correct: false },
-            { text: "absulutly", correct: false }
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: true, explanation: "right " }
         ]
     },
     {
         question: "9",
         answers: [
-            { text: "London", correct: false },
-            { text: "Paris", correct: true },
-            { text: "Berlin", correct: false },
-            { text: "Madrid", correct: false }
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: true, explanation: "right " }
         ]
     },
     {
         question: "10",
         answers: [
-            { text: "London", correct: false },
-            { text: "Paris", correct: true },
-            { text: "Berlin", correct: false },
-            { text: "Madrid", correct: false }
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: true, explanation: "right " }
         ]
     },
     {
         question: "11",
         answers: [
-            { text: "London", correct: false },
-            { text: "Paris", correct: true },
-            { text: "Berlin", correct: false },
-            { text: "Madrid", correct: false }
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: true, explanation: "right " }
         ]
     },
     {
         question: "12",
         answers: [
-            { text: "London", correct: false },
-            { text: "Paris", correct: true },
-            { text: "Berlin", correct: false },
-            { text: "Madrid", correct: false }
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: true, explanation: "right " }
         ]
     },
     {
         question: "13",
         answers: [
-            { text: "London", correct: false },
-            { text: "Paris", correct: true },
-            { text: "Berlin", correct: false },
-            { text: "Madrid", correct: false }
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: true, explanation: "right " }
         ]
     },
     {
         question: "14",
         answers: [
-            { text: "London", correct: false },
-            { text: "Paris", correct: true },
-            { text: "Berlin", correct: false },
-            { text: "Madrid", correct: false }
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: false, explanation: "haaaa " },
+            { text: "yes", correct: true, explanation: "right " },
+            { text: "yes", correct: false, explanation: "haaaa " }
         ]
     }
 ];
-
-// Shuffle function
 function shuffleArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
@@ -892,20 +727,13 @@ function shuffleArray(array) {
     }
 }
 
-// Number of questions to ask
-const numQuestionsToAsk = 50;
-
-// Shuffle your questions
 shuffleArray(allQuestions);
 
-// Select the first 10 questions
+const numQuestionsToAsk = 50;
 const questions = allQuestions.slice(0, numQuestionsToAsk);
-
-// Your existing code for the quiz
 const questionElement = document.getElementById("question");
 const answerButtons = document.getElementById("answer-buttons");
 const nextButton = document.getElementById("next-btn");
-
 let currentQuestionIndex = 0;
 let score = 0;
 
@@ -930,6 +758,7 @@ function showQuestion() {
         if (answer.correct) {
             button.dataset.correct = answer.correct;
         }
+        button.dataset.explanation = answer.explanation;
         button.addEventListener("click", selectAnswer);
     });
 }
@@ -957,16 +786,27 @@ function selectAnswer(e) {
         button.disabled = true;
     });
     nextButton.style.display = "block";
+    nextButton.style.display = "block";
+    showExplanation(selectedBtn.dataset.explanation);
 }
 
-function showScore() {
-    resetState();
-    questionElement.innerHTML = `You scored ${score} out of ${numQuestionsToAsk}!`;
-    nextButton.innerHTML = "RETRY";
-    nextButton.style.display = "block";
+function showExplanation(explanation) {
+    const explanationElement = document.getElementById("explanation");
+    explanationElement.textContent = explanation || "No explanation available.";
 }
+
+nextButton.addEventListener("click", () => {
+    if (currentQuestionIndex < numQuestionsToAsk) {
+        handleNextButton();
+    
+    } else {
+        startQuiz(); // Restart the quiz
+    }
+});
 
 function handleNextButton() {
+    const explanationElement = document.getElementById("explanation");
+    explanationElement.textContent = ""; // Clear explanation
     currentQuestionIndex++;
     if (currentQuestionIndex < numQuestionsToAsk) {
         showQuestion();
@@ -975,12 +815,11 @@ function handleNextButton() {
     }
 }
 
-nextButton.addEventListener("click", () => {
-    if (currentQuestionIndex < numQuestionsToAsk) {
-        handleNextButton();
-    } else {
-        startQuiz();
-    }
-});
+function showScore() {
+    resetState();
+    questionElement.innerHTML = `You scored ${score} out of ${numQuestionsToAsk}!`;
+    nextButton.innerHTML = "Retry";
+    nextButton.style.display = "block";
+}
 
 startQuiz();

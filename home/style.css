@@ -67,3 +67,23 @@ body{
 .incorrect{
     background: #ff9393;
 }
+
+
+
+.quit-btn {
+    background: #00b7ff; /* Change to your desired background color */
+    color: #0a0909;
+    font-weight: 700;
+    padding: 10px 80px; /* Adjust padding for rectangular shape */
+    border: none; /* Remove border for a cleaner look */
+    border-radius: 40px;
+    cursor: pointer;
+    text-decoration: none; /* Remove underline for anchor */
+    display: block; /* Center the button */
+    margin: 10px auto; /* Center the button horizontally with top margin */
+}
+
+.quit-btn:hover {
+    background: #ff3333; /* Change to your desired hover color */
+}
+
